@@ -11,7 +11,8 @@ import orderRouter from "./routes/orderRoute.js"
 
 //app config
 const app = express() 
-const port = 4000
+const PORT = process.env.PORT || 4000;
+
 
 //middleware
 app.use(express.json())
@@ -29,9 +30,8 @@ app.use("/api/order",orderRouter)
 
 
 import dotenv from "dotenv"
-//import orderRouter from "./routes/orderRoute.js"
-dotenv.config({ path: "uploads/.env" })
-console.log("JWT_SECRET VALUE:", process.env.JWT_SECRET)
+dotenv.config()
+
 
 
 
@@ -42,8 +42,8 @@ res.send("API Working")
 })
 
 
-app.listen(port,()=>{
-  console.log(`Server Started on http://localhost:${port}`)
-})
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 //mongodb+srv://mahesh:mahesh@cluster0.6xqsvx6.mongodb.net/?appName=Cluster0
