@@ -1,0 +1,129 @@
+/* MAIN CART */
+.cart {
+  margin-top: 100px;
+  width: 100%;
+}
+
+/* CART HEADER ROW */
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: #777;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+/* CART ITEM ROW */
+.cart-items-item {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.cart-items-item img {
+  width: 60px;
+  border-radius: 6px;
+}
+
+/* LINE */
+.cart hr {
+  border: none;
+  height: 1px;
+  background-color: #e2e2e2;
+}
+
+/* REMOVE ICON */
+.cross {
+  cursor: pointer;
+  color: tomato;
+  font-size: 18px;
+}
+
+/* BOTTOM SECTION */
+.cart-bottom {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* CART TOTAL BOX */
+.cart-total {
+  flex: 1;
+  border: 1px solid #e2e2e2;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.cart-total h2 {
+  margin-bottom: 20px;
+}
+
+.cart-total-detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  color: #555;
+}
+
+.cart-total hr {
+  margin: 15px 0;
+}
+
+/* CHECKOUT BUTTON */
+.cart-total button {
+  margin-top: 20px;
+  border: none;
+  color: white;
+  background-color: tomato;
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* PROMO CODE BOX */
+.cart-promocode {
+  flex: 1;
+  border: 1px solid #e2e2e2;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.cart-promocode p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.cart-promocode-input {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cart-promocode-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+.cart-promocode-input button {
+  padding: 12px 20px;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 750px) {
+  .cart-bottom {
+    flex-direction: column;
+  }
+}
